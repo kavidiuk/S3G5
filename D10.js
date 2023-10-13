@@ -121,18 +121,14 @@ console.log("Senza l'ultimo carattere:", senzaUltimo);
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 const onlyLetters = function (str) {
+  let risultato = "";
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === 0 <= 9) {
-      delete str[i];
-      const deleteStr = [];
-      deleteStr = str[i];
-    } else {
-      const fullText = [];
-      str[i] = fullText;
-
-      console.log(fullText);
+    if (!isNaN(str[i])) {
+      continue;
     }
+    risultato += str[i];
   }
+  console.log(risultato);
 };
 onlyLetters("ciao32come 7stai");
 /* ESERCIZIO 6
@@ -145,7 +141,7 @@ const isThisAnEmail = function (mail) {
       const mailTrue = mail;
       if (x === true) {
         console.log(mail);
-      } 
+      }
     }
   }
 };
@@ -153,8 +149,6 @@ isThisAnEmail("info@kavidu.com");
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-const whatDayIsIt = function () {};
-whatDayIsIt();
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -183,13 +177,20 @@ howManyDays();
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+// const isTodayMyBirthday = function (yourBirthday) {
+//   if (yourBirthday === 17 / 8 / 2023) {
+//     console.log("vero, è il tuo compleanno");
+//   } else {
+//     console.log("Oggi non è il tuo compleanno");
+//   }
+// };
+
 const isTodayMyBirthday = function (yourBirthday) {
-  if (yourBirthday === 17 / 8 / 2023) {
-    console.log("vero, è il tuo compleanno");
-  } else {
-    console.log("Oggi non è il tuo compleanno");
-  }
-};
+let 
+}
+yourBirthday = 12/12/2023;
+
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
